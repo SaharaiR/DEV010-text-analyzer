@@ -1,0 +1,56 @@
+body{
+    background-image: url("libros.jpg");
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: #179C3B;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+    opacity: 0.5;
+}
+
+div{
+    text-align: center;
+    color:darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: burlywood;
+    opacity: 0.5;
+}
+
+h2{
+    text-align: center;
+    color:darkcyan; 
+    background-color: darkolivegreen;
+    opacity: 0.5;
+}
+
+ul,li{
+    text-align: center;
+    color:blueviolet;
+    background-color: aliceblue;
+    opacity: 0.5;
+}
+
+#texto{
+    display: block;
+    padding: 0.5rem 1rem;
+    width: 200px;
+    color:#179C3B;
+}
+
+#btnLimpiar{
+    display: block;
+    padding: 0.5rem 1rem;
+    width: 80px;
+    margin: auto;
+    color: gray;
+}
+
+footer{
+    text-align: right;
+    color:blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aliceblue;
+}
