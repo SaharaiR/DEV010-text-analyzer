@@ -1,5 +1,5 @@
 body{
-    background-image: url("libros.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("libros.jpg");
     background-size: cover;
 }
 
@@ -7,36 +7,37 @@ h1{
     text-align: center;
     color: #179C3B;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: antiquewhite;
-    opacity: 0.5;
 }
 
 div{
     text-align: center;
-    color:darkgreen;
+    color: #37a755;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: burlywood;
-    opacity: 0.5;
 }
 
-h2{
+li{
+    display: inline-block;
     text-align: center;
-    color:darkcyan; 
-    background-color: darkolivegreen;
-    opacity: 0.5;
+    color: #7fb98f;
+    box-sizing: content-box;
+    border: 2px solid lightslategray;
+    padding: 0.5em 1em;
+    /*background-color: rgb(179,57,81);
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;*/
 }
 
-ul,li{
-    text-align: center;
-    color:blueviolet;
-    background-color: aliceblue;
-    opacity: 0.5;
+
+ul{
+    display: flex;
+    list-style: none;
 }
 
-#texto{
+textarea{
     display: block;
-    padding: 0.5rem 1rem;
-    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     color:#179C3B;
 }
 
@@ -52,5 +53,4 @@ footer{
     text-align: right;
     color:blueviolet;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: aliceblue;
 }
