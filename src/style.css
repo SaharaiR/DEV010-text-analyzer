@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("libros.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.568)), url("libros.jpg");
     background-size: cover;
 }
 
@@ -17,20 +17,18 @@ div{
 
 li{
     display: inline-block;
+    background: rgb(245, 245, 245);
+    opacity: 0.5;
     text-align: center;
-    color: #7fb98f;
-    box-sizing: content-box;
+    color: #125725;
     border: 2px solid lightslategray;
-    padding: 0.5em 1em;
-    /*background-color: rgb(179,57,81);
-    color: #fff;
-    text-decoration: none;
-    padding: 1em 2em;*/
+    border-radius: 1em;
+    padding: 1em 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-
+ 
 ul{
-    display: flex;
+    display: flexbox;
     list-style: none;
 }
 
@@ -38,15 +36,22 @@ textarea{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    border-radius: 10px;
+    border-color: olive;
     color:#179C3B;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #btnLimpiar{
     display: block;
+    text-align: center;
     padding: 0.5rem 1rem;
-    width: 80px;
+    width: 100px;
+    border-radius: 10px;
     margin: auto;
-    color: gray;
+    color: solid green;
+    background-color: #7fda97d7;
 }
 
 footer{

@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-  <script src="index.js" type="module"></script>
+<body> 
   <h1>ANALIZADOR DE TEXTO</h1>
   <div>
     <p>¡Bienvenido! Es un analizador gratuito para brindar información básica de la estructura de un texto, bajo las
@@ -23,16 +22,18 @@
     </p>
   </div>
   <ul>
-    <li>Recuento de palabras: </li>
-    <li>Recuento de caracteres: </li>
-    <li>Recuento de caracteres excluyendo espacios y signos: </li>
-    <li>Recuento de números: </li>
-    <li>Suma total de los números: </li>
-    <li>Longitud media de las palabras: </li>
+    <li data-testid="word-count">Recuento de palabras: 0</li>
+    <li data-testid="character-count">Recuento de caracteres: 0</li>
+    <li data-testid="character-no-spaces-count">Recuento de caracteres excluyendo espacios y signos: 0</li>
+    <li data-testid="number-count">Recuento de números: 0</li>
+    <li data-testid="number-sum">Suma total de los números: 0</li>
+    <li data-testid="word-length-average">Longitud media de las palabras: 0</li>
   </ul>
-  <textarea name="texto" rows="15" cols="60"></textarea>
+  <textarea name="user-input" rows="15" cols="60" placeholder="Área de texto"></textarea>
   <br>
   <button id="btnLimpiar">LIMPIAR</button><br><br>
-  <footer>CREADO POR: SAHARAI RODRIGUEZ HERNANDEZ</footer>
+  <footer><p>CREADO POR: SAHARAI RODRIGUEZ HERNANDEZ<br>
+    Diseñado por Freepik</p></footer>
+  <script src="index.js" type="module"></script>
 </body>
 </html>
