@@ -13,16 +13,20 @@ textoEscrito.addEventListener('keyup', function(event){
   document.querySelector('[data-testid="word-count"]').innerHTML = 'Recuento de palabras: ' + resultadoPalabras;
 
   //Recuento de caracteres: 0; data-testid="character-count
-  //const resultadoCaracterContador = analyzer.getCharacterCount(textoEscrito.value);
-  const resultadoCaracterContador = analyzer.getCharacterCount(event.key);
+  const resultadoCaracterContador = analyzer.getCharacterCount(textoEscrito.value);
+  //const resultadoCaracterContador = analyzer.getCharacterCount(event.key);
   document.querySelector('[data-testid="character-count"]').innerHTML = 'Recuento de caracteres: ' + resultadoCaracterContador;
 
   //Recuento de caracteres excluyendo espacios y signos: 0; data-testid="character-no-spaces-count"
   //analyzer.getCharacterCountExcludingSpaces(textoEscrito.value);
-  const resultadoNoEspacios = analyzer.getCharacterCountExcludingSpaces(event.key);
+  const resultadoNoEspacios = analyzer.getCharacterCountExcludingSpaces(textoEscrito.value);
+  //const resultadoNoEspacios = analyzer.getCharacterCountExcludingSpaces(event.key);
   document.querySelector('[data-testid="character-no-spaces-count"]').innerHTML = 'Recuento de caracteres excluyendo espacios y signos: ' + resultadoNoEspacios;
 
   //analyzer.getAverageWordLength(textoEscrito.value);
+  //Longitud media de las palabras: 0; data-testid="word-length-average";
+  const resultadoPalabraProm = analyzer.getAverageWordLength(textoEscrito.value);
+  document.querySelector('[data-testid="word-length-average"]').innerHTML = 'Longitud media de las palabras: ' + resultadoPalabraProm;
 
   //Recuento de números: 0; data-testid="number-count
   //const resultadoContadorNum = analyzer.getNumberCount(textoEscrito.value);
