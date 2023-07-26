@@ -1,42 +1,64 @@
-const contadorCaracter = 0;
-const contadorNumeros = 0;
+let contadorCaracter = 0;
+let contadorNumeros = 0;
+let contadorPalabras = 0;
+let sumaNumeros = 0;
+let contadorNoEspacios = 0;
 const analyzer = {
   getWordCount: (text) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    //console.log(text);
-    
+    contadorPalabras = text.split(/\s+/).length;
+    contadorPalabras = contadorPalabras - 1;
+    return contadorPalabras;
   },
   getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
-    // eslint-disable-next-line no-undef
-    let i = 0;
-    if((text.charCodeAt(i) >= 65 && text.charCodeAt(i) <= 90) || (text.charCodeAt(i) >= 97 && text.charCodeAt(i) <= 122)){
-      contadorCaracter++;
-      i++;
-      return contadorCaracter;
-    }
-    
+    //contadorCaracter = text.trim();
+    contadorCaracter++;
+    return contadorCaracter;
   },
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
+    if(/[.,/#!$%\^&\*;:{}=\-_`~()]/.text || /\s/.text){
+      contadorNoEspacios++;
+      return contadorNoEspacios;
+    }else{
+      return contadorNoEspacios;
+    }
   },
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    /*if((text.charCodeAt(0) >= 48 && text.charCodeAt(0) <= 57)){
+    //for(let i = 0; i < text.length; i++){
+    //if((text.charCodeAt(i) >= 48 && text.charCodeAt(i) <= 57)){
+    if(!isNaN(text)){
       contadorNumeros++;
       return contadorNumeros;
-    }*/
-    if(/^\d$/.text){
-      contadorCaracter++;
-      return contadorCaracter;
     }
+    else{
+      return contadorNumeros;
+    }
+    //}
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    let numero = 0;
+    if(isNaN(text) || text === " "){
+      return sumaNumeros;
+    }else{
+      numero = parseInt(text,10);
+      sumaNumeros += numero;
+      return sumaNumeros;
+    }
   },
+  inicializarContadores: function () {
+    contadorNumeros = 0;
+    contadorCaracter = 0;
+    sumaNumeros = 0;
+    contadorNoEspacios = 0;
+    contadorPalabras = 0;
+  }
 };
 
 export default analyzer;
