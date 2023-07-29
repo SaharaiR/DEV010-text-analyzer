@@ -44,7 +44,7 @@ textarea[name="user-input"]{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#btnLimpiar{
+#reset-button{
     display: block;
     text-align: center;
     padding: 0.5rem 1rem;

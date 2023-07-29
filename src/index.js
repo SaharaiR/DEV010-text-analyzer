@@ -2,10 +2,10 @@ import analyzer from './analyzer.js';
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 const textoEscrito = document.querySelector('textarea');//LIGA AL TEXTAREA
-const btnLimpiar = document.getElementById('btnLimpiar');//LIGA AL BOTON PARA REINICIAR METRICAS Y TEXTO
+const btnLimpiar = document.getElementById('reset-button');//LIGA AL BOTON PARA REINICIAR METRICAS Y TEXTO
 //const resultadoCaracterContador = analyzer.getCharacterCount(textoEscrito.value);
 
-textoEscrito.addEventListener('keyup', function(event){
+textoEscrito.addEventListener('keyup', function(){
   //DETECTA EL TEXTO AL ESCRIBIRLO HAY QUE ENVIAR EL TEXTO A CADA FUNCION
   
   //Recuento de palabras: 0; data-testid="word-count"
@@ -29,12 +29,12 @@ textoEscrito.addEventListener('keyup', function(event){
   document.querySelector('[data-testid="word-length-average"]').innerHTML = 'Longitud media de las palabras: ' + resultadoPalabraProm;
 
   //Recuento de números: 0; data-testid="number-count
-  //const resultadoContadorNum = analyzer.getNumberCount(textoEscrito.value);
-  const resultadoContadorNum = analyzer.getNumberCount(event.key);
+  const resultadoContadorNum = analyzer.getNumberCount(textoEscrito.value);
+  //const resultadoContadorNum = analyzer.getNumberCount(event.key);
   document.querySelector('[data-testid="number-count"]').innerHTML = 'Recuento de números: ' + resultadoContadorNum;
 
-  //analyzer.getNumberSum(textoEscrito.value);
-  const resultadoSuma = analyzer.getNumberSum(event.key);
+  const resultadoSuma = analyzer.getNumberSum(textoEscrito.value);
+  //const resultadoSuma = analyzer.getNumberSum(event.key);
   document.querySelector('[data-testid="number-sum"]').innerHTML = 'Suma total de los números: ' + resultadoSuma;
 });
 
