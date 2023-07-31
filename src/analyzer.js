@@ -53,21 +53,27 @@ const analyzer = {
     //const posibleNumero = (text.match(/\d+\.\d+/g) || []).length;
     //const posibleNumero = text.match(/\d+\.\d+/g);
     //const posibleNumero = text.match(/\d+\.\d+|\d+/g);
+    //const posibleNumero = text.match(/\b\d+(\.\d+)?\b/g);
+    //const posibleNumero = text.split(' ');
+    //console.log(text);
+    /*for(let i = 0; i < posibleNumero.length; i++){
+      if(/^\d*\.?\d+$/.test(posibleNumero[i])){
+        console.log(posibleNumero[i]);
+      }
+    }*/
     const posibleNumero = text.match(/\b\d+(\.\d+)?\b/g);
-    //console.log(posibleNumero);
     if(posibleNumero === null){
-      return parseInt(contadorNumeros,0);
+      return contadorNumeros;
     }else{
       contadorNumeros = posibleNumero.length;
-      return parseInt(contadorNumeros,0);
+      return contadorNumeros;
     }
-    
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    //const textoSinSignosEspacios = text.replace(/\s|[.,/#!$%^&*;:{}=\-_`~()]/g,'');
     //const numeros = text.match(/\d+\.\d+/g);
     //const numeros = text.match(/\d+\.\d+|\d+/g);
+    //const numeros = text.match(/^\d*\.?\d+$/);
     const numeros = text.match(/\b\d+(\.\d+)?\b/g);
     //const sum = arr.reduce((a, b) => a + parseInt(b), 0);
     if(numeros === null){
@@ -76,12 +82,6 @@ const analyzer = {
       sumaNumeros = numeros.reduce((numeroAnterior, numeroActual) => numeroAnterior + parseFloat(numeroActual),0);
       return parseFloat(sumaNumeros.toFixed(2),0);
     }
-    
-    /*const numeros = (text.match(/\d+/g) || []); 
-    //const numeros = (text.match(/\d+\.\d+/g) || []);
-    //const sum = arr.reduce((a, b) => a + parseInt(b), 0);
-    sumaNumeros = numeros.reduce((numeroAnterior, numeroSuma) => numeroAnterior + parseInt(numeroSuma),0);
-    return sumaNumeros;*/
   },
   inicializarContadores: function () {
     contadorNumeros = 0;

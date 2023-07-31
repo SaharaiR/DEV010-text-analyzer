@@ -30,12 +30,10 @@ textoEscrito.addEventListener('keyup', function(){
 
   //Recuento de números: 0; data-testid="number-count
   const resultadoContadorNum = analyzer.getNumberCount(textoEscrito.value);
-  //const resultadoContadorNum = analyzer.getNumberCount(event.key);
-  document.querySelector('[data-testid="number-count"]').innerHTML = 'Recuento de números: ' + resultadoContadorNum;
+  document.querySelector('li[data-testid="number-count"]').innerHTML = 'Números: ' + resultadoContadorNum;
 
   const resultadoSuma = analyzer.getNumberSum(textoEscrito.value);
-  //const resultadoSuma = analyzer.getNumberSum(event.key);
-  document.querySelector('[data-testid="number-sum"]').innerHTML = 'Suma total de los números: ' + resultadoSuma;
+  document.querySelector('li[data-testid="number-sum"]').innerHTML = 'Suma números: ' + resultadoSuma;
 });
 
 btnLimpiar.addEventListener('click', function(){
@@ -45,7 +43,7 @@ btnLimpiar.addEventListener('click', function(){
   document.querySelector('[data-testid="word-count"]').innerHTML = 'Recuento de palabras: 0'
   document.querySelector('[data-testid="character-count"]').innerHTML = 'Recuento de caracteres: 0';
   document.querySelector('[data-testid="character-no-spaces-count"]').innerHTML = 'Recuento de caracteres excluyendo espacios y signos: 0';
-  document.querySelector('[data-testid="number-count"]').innerHTML = 'Recuento de números: 0';
-  document.querySelector('[data-testid="number-sum"]').innerHTML = 'Suma total de los números: 0';
+  document.querySelector('[data-testid="number-count"]').innerHTML = 'Números: 0';
+  document.querySelector('[data-testid="number-sum"]').innerHTML = 'Suma números: 0';
   document.querySelector('[data-testid="word-length-average"]').innerHTML = 'Longitud media de las palabras: 0';
 });
