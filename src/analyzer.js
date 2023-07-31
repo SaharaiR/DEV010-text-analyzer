@@ -35,35 +35,13 @@ const analyzer = {
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    /*const posibleNumero = text.replace(/\s|[.,/#!$%^&*;:{}=\-_`~()]/g,'');
-    //contadorNumeros = (posibleNumero.match(/\d+\.\d+/g) || []).length;
-    if(contadorNumeros.length === 0){
-      return contadorNumeros  
-    }else{
-      contadorNumeros = (posibleNumero.match(/\d/g) || []).length;
-      return contadorNumeros;
-    }*/
-
-    /*const posibleNumero = text.replace(/\s|[.,/#!$%^&*;:{}=\-_`~()]/g,'');
-    //const posibleNumero = (text.match(/\d+\.\d+/g) || []).length;
-    contadorNumeros = (posibleNumero.match(/\d/g) || []).length;
-    return contadorNumeros;*/
-
-    //const posibleNumero = text.replace(/\s|[.,/#!$%^&*;:{}=\-_`~()]/g,'');
     //const posibleNumero = (text.match(/\d+\.\d+/g) || []).length;
     //const posibleNumero = text.match(/\d+\.\d+/g);
     //const posibleNumero = text.match(/\d+\.\d+|\d+/g);
     //const posibleNumero = text.match(/\b\d+(\.\d+)?\b/g);
-    //const posibleNumero = text.split(' ');
-    //console.log(text);
-    /*for(let i = 0; i < posibleNumero.length; i++){
-      if(/^\d*\.?\d+$/.test(posibleNumero[i])){
-        console.log(posibleNumero[i]);
-      }
-    }*/
     const posibleNumero = text.match(/\b\d+(\.\d+)?\b/g);
     if(posibleNumero === null){
-      return contadorNumeros;
+      return 0;
     }else{
       contadorNumeros = posibleNumero.length;
       return contadorNumeros;
@@ -77,7 +55,7 @@ const analyzer = {
     const numeros = text.match(/\b\d+(\.\d+)?\b/g);
     //const sum = arr.reduce((a, b) => a + parseInt(b), 0);
     if(numeros === null){
-      return parseFloat(sumaNumeros.toFixed(2),0);
+      return 0;
     }else{
       sumaNumeros = numeros.reduce((numeroAnterior, numeroActual) => numeroAnterior + parseFloat(numeroActual),0);
       return parseFloat(sumaNumeros.toFixed(2),0);
