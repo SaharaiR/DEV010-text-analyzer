@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Analizador de texto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body> 
+  <header><h1>ANALIZADOR DE TEXTO</h1></header>
+  <div>
+    <p>¡Bienvenido! Es un analizador gratuito para brindar información básica de la estructura de un texto, bajo las
+      siguientes métricas:<br>
+      Recuento de palabras, recuento de caracteres, recuento de caracteres excluyendo espacios y signos,
+      recuento de números,<br> suma total de los numeros y longitud media de las palabras.
+    </p>
+    <p><strong>INSTRUCCIONES: </strong><br>
+      Escribir en el área de texto, el texto a analizar.<br> Los cálculos se muestran en tiempo real, en los
+      espacios indicados a medida que se escribe el texto.<br>
+      Para reiniciar los cálculos de la métrica y limpiar el área de texto presiona el botón LIMPIAR.
+    </p>
+  </div>
+  <ul class = "ulClase">
+    <li data-testid="word-count" class = "liClase">Recuento de palabras: </li>
+    <li data-testid="character-count" class = "liClase">Recuento de caracteres: </li>
+    <li data-testid="character-no-spaces-count" class = "liClase">Recuento de caracteres excluyendo espacios y signos: </li>
+    <li data-testid="number-count" class = "liClase">Números: 0 </li>
+    <li data-testid="number-sum" class = "liClase">Suma números: 0 </li>
+    <li data-testid="word-length-average" class = "liClase">Longitud media de las palabras: </li>
+  </ul>
+  <textarea name="user-input" rows="15" cols="60" placeholder="Área de texto"></textarea>
+  <br>
+  <button id="reset-button">LIMPIAR</button><br><br>
+  <footer><p>CREADO POR: SAHARAI RODRIGUEZ HERNANDEZ<br>
+    Diseñado por Freepik</p></footer>
+    <h2 class = "ulClase"></h2>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
