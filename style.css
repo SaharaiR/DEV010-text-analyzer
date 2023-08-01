@@ -1,31 +1,32 @@
 body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.568)), url("libros.jpg");
+    background-image: linear-gradient(rgba(199, 199, 199, 0.212), rgba(194, 194, 194, 0.295)), url("libros2.jpg");
     background-size: cover;
 }
 
 header{
     text-align: center;
-    color: #179C3B;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0c421c;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
 }
 
 div{
     text-align: center;
-    color: #37a755;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #253329;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
 }
 
 .liClase{
     display: inline-block;
-    background: rgb(245, 245, 245);
-    opacity: 0.5;
+    background: rgb(255, 247, 247);
     text-align: center;
     color: #125725;
     border: 2px solid lightslategray;
     border-radius: 1em;
     margin: auto;
     padding: 1em 3em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Varela Round', sans-serif;
 }
  
 .ulClase{
@@ -40,8 +41,9 @@ textarea[name="user-input"]{
     text-align: center;
     border-radius: 10px;
     border-color: olive;
-    color:#179C3B;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#207a38;
+    font-family: 'Montserrat', sans-serif, 'Arial Narrow';
+    font-size: 16px;
 }
 
 #reset-button{
@@ -53,10 +55,12 @@ textarea[name="user-input"]{
     margin: auto;
     color: solid green;
     background-color: #7fda97d7;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
 }
 
 footer{
     text-align: right;
-    color:blueviolet;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(45, 7, 77);
+    font-family: 'DM Mono', monospace;
 }
