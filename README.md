@@ -94,7 +94,7 @@ El comando `npm run deploy` puede ayudarte con esta tarea y también puedes
  consultar su [documentación oficial](https://docs.github.com/es/pages).
 
 ## 5. Desarrollo
-
+Empecé con la configuración de Github y mucha lectura acerca de diferentes temas técnicos
 
 ### Control de Versiones (Git y GitHub)
 
