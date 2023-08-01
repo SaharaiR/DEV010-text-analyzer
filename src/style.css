@@ -5,14 +5,20 @@ body{
 
 header{
     text-align: center;
-    color: #179C3B;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #004111;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    background-color: antiquewhite;
+    opacity: 0.5;
 }
 
 div{
     text-align: center;
-    color: #37a755;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1e3524;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    background-color:  antiquewhite;
+    opacity: 0.5;
 }
 
 .liClase{
@@ -25,7 +31,7 @@ div{
     border-radius: 1em;
     margin: auto;
     padding: 1em 3em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Varela Round', sans-serif;
 }
  
 .ulClase{
@@ -40,8 +46,9 @@ textarea[name="user-input"]{
     text-align: center;
     border-radius: 10px;
     border-color: olive;
-    color:#179C3B;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#207a38;
+    font-family: 'Montserrat', sans-serif, 'Arial Narrow';
+    font-size: 16px;
 }
 
 #reset-button{
@@ -53,10 +60,12 @@ textarea[name="user-input"]{
     margin: auto;
     color: solid green;
     background-color: #7fda97d7;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
 }
 
 footer{
     text-align: right;
     color:blueviolet;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif, 'Arial Narrow';
 }
