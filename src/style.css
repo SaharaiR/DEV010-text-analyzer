@@ -1,30 +1,26 @@
 body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.568)), url("libros.jpg");
+    background-image: linear-gradient(rgba(199, 199, 199, 0.212), rgba(194, 194, 194, 0.295)), url("libros2.jpg");
+    /*background-image: url("libros2.jpg");*/
     background-size: cover;
 }
 
 header{
     text-align: center;
-    color: #004111;
+    color: #0c421c;
     font-family: 'Comfortaa', cursive;
     font-size: 18px;
-    background-color: antiquewhite;
-    opacity: 0.5;
 }
 
 div{
     text-align: center;
-    color: #1e3524;
+    color: #253329;
     font-family: 'Varela Round', sans-serif;
     font-size: 16px;
-    background-color:  antiquewhite;
-    opacity: 0.5;
 }
 
 .liClase{
     display: inline-block;
-    background: rgb(245, 245, 245);
-    opacity: 0.5;
+    background: rgb(255, 247, 247);
     text-align: center;
     color: #125725;
     border: 2px solid lightslategray;
@@ -66,6 +62,6 @@ textarea[name="user-input"]{
 
 footer{
     text-align: right;
-    color:blueviolet;
-    font-family: 'Montserrat', sans-serif, 'Arial Narrow';
+    color:rgb(45, 7, 77);
+    font-family: 'DM Mono', monospace;
 }
