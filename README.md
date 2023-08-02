@@ -5,6 +5,7 @@ Analizador de texto
 * [2. Funcionalidades](#2-funcionalidaes)
 * [3. Boiler-Plate](#3-boilerPlat)
 * [4. Desarrollo](#4-desarrollo)
+* [5. Curiosidad](#5-curiosidad)
 
 ## 1. Consideraciones generales
 
@@ -26,21 +27,6 @@ Es un analizador gratuito para brindar información básica de la estructura de 
 ## 3. Boilerplate
 
 Está realizado en JavaScript puro (Vanilla JavaScript), HTML y CSS, con el siguiente boilerplate:
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── analyzer.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── analyzer.spec.js
 
 ### Descripción de scripts / archivos
 
@@ -78,15 +64,15 @@ pruebas unitarias para los métodos del objeto `analyzer`.
 
 ![Boceto HTML](boceto.png)
   
-* Implementé el diseño de HTML junto con la inforamción e hice los estilos de CSS.
-* Me documenté sobre información técnica de CSS (box model, REM/EM, atributos.
+* Implementé el diseño de HTML junto con la información e hice los estilos de CSS.
+* Me documenté sobre información técnica de CSS (box model, REM/EM, atributos...)
 * Me metí de lleno a Javascript, dando funcionamiento al botón y capturar el texto del textarea
-* Realicé los algoritmos para cada una de las funciones, probé con diferentes formas de identificar los números, pase por usar código ASCII, pero tenía que pasar caracter por caracter, lo había dejado porque funcionaba, pero al llegar a identificar los decimales o los "no números" se complicaba, así que cambié a expresiones irregulares.
-* En mi primer sprint me sugirieron algunos cambios en el diseño, como el color de las letras, eso lo dejo hasta el final, porque me distraigo mucho con CSS.
+* Realicé los algoritmos para cada una de las funciones, probé con diferentes formas de identificar los números, pase por usar código ASCII luego isNaN, pero tenía que pasar caracter por caracter, lo había dejado porque funcionaba, pero al llegar a identificar los decimales o los "no números" se complicaba, así que cambié a expresiones irregulares.
+* En mi primer sprint me sugirieron algunos cambios en el diseño, como el color de las letras y contrastes, eso lo dejo hasta el final, porque me distraigo mucho con CSS.
 * Mis primeros errores en los test fueron fáciles de solucionar, pero tuve uno que tardé mucho en entender y que se resolvió en un OH y era simplemente un retorno de 0 en los "no números", lo cual se estaba haciendo con la variable, pero no estaba siendo detectada de esa manera.
 * Terminando de pasar todos los tests, realicé los cambios en el CSS y se completo este README
 
 ## 5. Curiosidad
-Me gusta leer "cómics" de una apliación que se llama WebToon de diseñadores, escritores independientes que suben sus historietas y uno de los que estoy leyendo, la cuál la protagonista es escritora, precisamente usa un analizador, se me hizo curioso estar trabajando en esto y me saliera un uso :)
+Me gusta leer "cómics" de una aplicación que se llama WebToon de diseñadores, escritores independientes que suben sus historietas y uno de los que estoy leyendo, la cuál la protagonista es escritora, precisamente usa un analizador, se me hizo curioso estar trabajando en esto y me saliera un uso :)
 
 ![Curiosidad](curiosidad.jpg)
