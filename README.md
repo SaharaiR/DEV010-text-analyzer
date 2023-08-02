@@ -72,9 +72,9 @@ se encuentran en el parámetro `text`.
 pruebas unitarias para los métodos del objeto `analyzer`.
 
 ## 4. Desarrollo
-*Empecé con la configuración de GitHub y VSCode.
-*Leí acerca de los usos de analizadores de texto y los ámbitos dónde se utilizan para poder decidir el diseño de la aplicación.
-*Realicé un boceto del HTML, para saber la distribución de los elementos.
-*Implementé el diseño de HTML junto con la inforamción e hice los estilos de CSS.
-*Me documenté sobre información técnica de CSS (box model, REM/EM, atributos.
-*Me metí de lleno a Javascript, dando funcionamiento al botón y capturar el texto del areatext
+* Empecé con la configuración de GitHub y VSCode.
+* Leí acerca de los usos de analizadores de texto y los ámbitos dónde se utilizan para poder decidir el diseño de la aplicación.
+* Realicé un boceto del HTML, para saber la distribución de los elementos.
+* Implementé el diseño de HTML junto con la inforamción e hice los estilos de CSS.
+* Me documenté sobre información técnica de CSS (box model, REM/EM, atributos.
+* Me metí de lleno a Javascript, dando funcionamiento al botón y capturar el texto del areatext
