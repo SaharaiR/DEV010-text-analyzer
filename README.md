@@ -1,45 +1,29 @@
-# Analizador de texto
+Analizador de texto
 
 ## Índice
-
-<<<<<<< HEAD
 * [1. Consideraciones generales](#1-consideraciones-generales)
-* [2. Preámbulo](#2-preámbulo)
-* [3. Funcionalidades](#3-funcionalidades)
-* [6. Pruebas](#6-pruebas)
-=======
-
->>>>>>> 10d107941b667ef6e139991519092898827d2637
-
-***
+* [2. Funcionalidades](#2-funcionalidaes)
+* [3. Boiler-Plate](#3-boilerPlat)
+* [4. Desarrollo](#4-desarrollo)
 
 ## 1. Consideraciones generales
 
-<<<<<<< HEAD
-* Este proyecto lo realicé .
-* El rango de tiempo estimado para completar el proyecto es de 1 a 3 Sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.
-  No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
-  Irás aprendiendo.
-=======
-*Es un analizador gratuito para brindar información básica de la estructura de un texto, bajo las siguientes métricas
+* Este proyecto lo realicé por individual.
+* Me tomé 3 sprints para completarlo.
+
+## 2. Funcionalidades
+Es un analizador gratuito para brindar información básica de la estructura de un texto, bajo las siguientes métricas
 *Recuento de palabras
 *Recuento de caracteres
 *Recuento de caracteres excluyendo espacios y signos
 *Recuento de números
 *Suma total de los numeros
 *Longitud media de las palabras.
-      Escribir en el área de texto, el texto a analizar.<br> Los cálculos se muestran en tiempo real, en los
-      espacios indicados a medida que se escribe el texto.<br>
-      Para reiniciar los cálculos de la métrica y limpiar el área de texto presiona el botón LIMPIAR.
->>>>>>> 10d107941b667ef6e139991519092898827d2637
 
-## 2. Funcionalidades
 *La página web está conformada por un área de texto, los cálculos se muestran en tiempo real y en los espacios indicados a medida que se escribe el texto.
 *Tiene un botón LIMPIAR para reiniciar los cálculos de las métricas y limpiar el área.
 
-## 4. Boilerplate
+## 3. Boilerplate
 
 Está realizado en JavaScript puro (Vanilla JavaScript), HTML y CSS, con el siguiente boilerplate:
 ./
@@ -57,7 +41,6 @@ Está realizado en JavaScript puro (Vanilla JavaScript), HTML y CSS, con el sigu
 └── test
     ├── .eslintrc
     └── analyzer.spec.js
-```
 
 ### Descripción de scripts / archivos
 
@@ -88,5 +71,10 @@ se encuentran en el parámetro `text`.
 * [`test/analyzer.spec.js`](./test/analyzer.spec.js): este archivo contiene las
 pruebas unitarias para los métodos del objeto `analyzer`.
 
-## 5. Desarrollo
-Empecé con la configuración de Github y mucha lectura acerca de diferentes temas técnicos
+## 4. Desarrollo
+*Empecé con la configuración de GitHub y VSCode.
+*Leí acerca de los usos de analizadores de texto y los ámbitos dónde se utilizan para poder decidir el diseño de la aplicación.
+*Realicé un boceto del HTML, para saber la distribución de los elementos.
+*Implementé el diseño de HTML junto con la inforamción e hice los estilos de CSS.
+*Me documenté sobre información técnica de CSS (box model, REM/EM, atributos.
+*Me metí de lleno a Javascript, dando funcionamiento al botón y capturar el texto del areatext
