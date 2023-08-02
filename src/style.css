@@ -1,6 +1,5 @@
 body{
     background-image: linear-gradient(rgba(199, 199, 199, 0.212), rgba(194, 194, 194, 0.295)), url("libros2.jpg");
-    /*background-image: url("libros2.jpg");*/
     background-size: cover;
 }
 
