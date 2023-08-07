@@ -30,8 +30,8 @@ div{
 }
  
 .ulClase{
-    display: flexbox;
-    list-style: none;
+    display: flexbox;/*para que el acomodo de los hijos sea flexible*/
+    list-style: none; /*para que no ponga los li en lista hacia abajo*/
 }
 
 textarea[name="user-input"]{
